@@ -241,6 +241,10 @@ h2 {
     line-height: 1.75em;
 }
 
+.lowercase-b {
+  text-transform: lowercase;
+}
+
 @media screen and (max-width: 736px) {
 
     h2 {

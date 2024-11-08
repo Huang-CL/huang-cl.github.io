@@ -24,6 +24,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
   </head>
   <body class="landing is-preload">
 
@@ -43,8 +49,8 @@
       		  <li><a href=#one>Bio</a></li>
 		  <li><a href=#two>Research overview</a></li>
 		  <li><a href=#atmosphere>Exoplanet atmosphere</a></li>
-		  <li><a href=#supernova>Supernova</a></li>
 		  <li><a href=#structure>Interior structure</a></li>
+		  <li><a href=#supernova>Supernova</a></li>
 		  <li><a href=#footer>Contact</a></li>
       		</ul>
       	      </div>
@@ -125,29 +131,28 @@
 
       <section class="wrapper alt style2">
 	<section class="spotlight">
-	  <div class="image"><img src="images/Tide_base75d_0.35ex_NUV.png" alt="Hydrodynamic model of WASP-121b" style="max-width:100vw;"  /></div><div class="content">
-	    <h3><a href=#atmosphere>Hydrodynamic model of WASP-121b</a></h3>
-	    
-	    <p>Collaborate with Tommi Koskinen, we expand the 
-	    Adding atomic metal species and related physical processes into the photochemical-dynamical thermosphere in <a href="https://ui.adsabs.harvard.edu/abs/2013Icar..226.1678K/abstract">Koskinen et al., 2013</a>, Koskinen and I try to interpret the observed transmission spectrum of metal species in NUV.</p>
-	  </div>
-	</section>	<section class="spotlight">
 	  <div class="image"><img src="images/Halpha.png" alt="Comparing model to observed Hα transmission spectrum of HD 189733b" style="max-width:100vw;"  /></div><div class="content">
-	    <h3><a href=#atmosphere>H excitation mechanism in planetary upper atmosphere</a></h3>
-	    <p>Under the supervision of Phil Arras at UVa, we constructed a hot Jupiter thermosphere model to explain the observed Hα and Na D transmission spectrum of HD 189733b and constrain the properties of hot Jupiter upper atmosphere (<a href="http://iopscience.iop.org/article/10.3847/1538-4357/aa9b32/meta">Huang et al., 2017</a>).  We demonstrate that radiative excitation by Lyα is the dominant mechanism for H atom excitation, and constructed a Monte Carlo simulation for the resonant scattering process of Lyα photon in the upper atmosphere.
+	    <h3><a href=#atmosphere>Atomic H excitation mechanism in planetary upper atmosphere</a></h3>
+	    <p>Under the supervision of Phil Arras at UVa, we developed a hot Jupiter thermosphere model to explain the observed Hα and Na D transmission spectra of HD 189733b and constrain the properties of hot Jupiter upper atmosphere.  We demonstrated that radiative excitation by Lyα is the dominant mechanism for H atoms and constructed a Monte Carlo simulation to model the resonant scattering process of Lyα photon in the upper atmosphere (<a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...851..150H/abstract">Huang et al., 2017</a>).</p>
 	  </div>
 	</section>
 	<section class="spotlight">
-	  <div class="image"><img src="images/11ht.png" alt="SN2011ht Hα emission profile" style="max-width:100vw;"/></div><div class="content">
-	    <h3><a href="#supernova">Radiation transfer in interacting supernova remnants</a></h3>
-	    <p>Under the supervision of Roger Chevalier at UVa, we constructed a model of radiation transfer due to electron scattering within pre-shocked ionized circumstellar medium (CSM) to explain the observed broad component of interacting supernovae emission lines (<a href="https://academic.oup.com/mnras/article/475/1/1261/4712231">Huang & Chevalier, 2018</a>).</p>
+	  <div class="image"><img src="images/Tide_base75d_0.35ex_NUV.png" alt="Hydrodynamic model of WASP-121b" style="max-width:100vw;"  /></div><div class="content">
+	    <h3><a href=#wasp121b>Hydrodynamic model of WASP-121<span class="lowercase-b">b</span></a></h3>
+	    <p>In collaboration with Tommi Koskinen, we have integrated the non-LTE level population of metal species and Lyα simulation into a <a href="https://ui.adsabs.harvard.edu/abs/2013Icar..226.1678K/abstract">hydrodynamic atmospheric escape model</a>. This integration enables us to replicate all observed NUV and optical transmission spectrum characteristics of WASP 121b with a self-consistent model that spans the complete atmospheric pressure range (<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...951..123H/abstract">Huang et al., 2023</a>). </p>
 	  </div>
 	</section>
 	<section class="spotlight">
 	  <div class="image"><img src="images/RM.jpg" alt="Planets mass-radius relation" style="max-width:100vw;"/></div>
 	  <div class="content">
 	    <h3><a href="#structure">MAGRATHEA: code for terrestrial planets interior structure</a></h3>
-	    <p>Under the direction of Jason Steffen at UNLV and collaborate with David Rice, we develope an open-source C++ terrestrial planet interior structure code <a href="https://github.com/Huang-CL/Magrathea">MAGRATHEA</a>.  The code is structured to enable the user to choose between a large library of EOSs and add/change materials and equations (<a href="https://arxiv.org/abs/2201.03094">Huang et al., 2022, submitted</a>). Using MAGRATHEA, we demonstrate the effect of the new measurement of equation of state (EOS) of water ice on our understanding of terrestrial planets (<a href="https://academic.oup.com/mnras/article-abstract/503/2/2825/6162619?redirectedFrom=fulltext">Huang et al., 2021</a>).</p>
+	    <p>Under the direction of Jason Steffen at UNLV and in collaborate with David Rice, we have developed an open-source C++ code for modeling the interior structure of terrestrial planets called <a href="https://github.com/Huang-CL/Magrathea">MAGRATHEA</a>.  The code is designed to allow users to select from a vast library of EOSs and to add or modify materials and equations as needed (<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.513.5256H/abstract">Huang et al., 2022</a>). With MAGRATHEA, we have demonstrated the impact of new measurements of the EOS for water ice on our understanding of terrestrial planets (<a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.503.2825H/abstract">Huang et al., 2021</a>).</p>
+	  </div>
+	</section>
+	<section class="spotlight">
+	  <div class="image"><img src="images/11ht.png" alt="SN2011ht Hα emission profile" style="max-width:100vw;"/></div><div class="content">
+	    <h3><a href="#supernova">Radiation transfer in interacting supernova remnants</a></h3>
+	    <p>Under the supervision of Roger Chevalier at UVa, we developed a model for radiation transfer attributed to electron scattering within the pre-shocked ionized circumstellar medium (CSM).  This model aims to explain the observed broad component of emission lines, a characteristic feature of interacting supernovae (<a href="https://academic.oup.com/mnras/article/475/1/1261/4712231">Huang & Chevalier, 2018</a>).</p>
 	  </div>
 	</section>
       </section>
@@ -157,7 +162,7 @@
 
       <!-- Research detail -->
       <section id="atmosphere" class="wrapper style5">
-      
+            
 	<div class="inner">
 
 	  <h3 style="text-transform: none;">A Model of the Hα and Na Transmission Spectrum of HD 189733b</h3>
@@ -168,7 +173,7 @@
 	      <figcaption>Figure 1.  Illustration of the transmission spectrum</figcaption>
 	    </figure>
 
-	    Measuring the transit depth of planets as a function of wavelength, also known as the transmission spectrum, can be used to probe their atmospheres.  The stellar beams pointed at the Earth probe the transiting planet's atmosphere transversely along a chord perpendicular to the impact radius. Besides the opaque planet with radius <img src="http://latex.codecogs.com/svg.latex?R_p" border="0"/>, the atmosphere blocks an extra amount of the light.  The scale of the brightness reduction at frequency <em>ν</em> due to planet and its atmosphere is equivalent to a bare planet with an equivalent radius of <img src="http://latex.codecogs.com/svg.latex?R_\nu" border="0"/>. Because the opacity of molecules and atoms in a planet's atmosphere is a function of wavelength, they will leave their trace in the transmission spectrum.  Transmission spectrum is the best tool to characterize the atmosphere near the planet's terminator.
+	    Measuring the transit depth of planets as a function of wavelength, known as the transmission spectrum, allows us to probe their atmospheres.  The stellar beams pointed at the Earth probe the transiting planet's atmosphere transversely along a chord perpendicular to the impact radius. Besides the opaque planet with radius <em>R<sub>p</sub></em>, the atmosphere blocks an additional amount of light.  The scale of the brightness reduction at frequency <em>ν</em> due to planet and its atmosphere is equivalent to that of a bare planet with an equivalent radius of <em>R<sub>ν</sub></em>. Since the opacity of molecules and atoms in a planet's atmosphere is a function of wavelength, they leave their imprint in the transmission spectrum.  Transmission spectrum is the best tool for characterize the atmosphere near the planet's terminator.
 
 	    <br><br>
 	    
@@ -176,10 +181,11 @@
 	      <img src="./images/MC.png" width="190px" alt="Illustration of the Monte-Carlo simulation for Lyα"/>
 	      <figcaption>Figure 2.  Illustration of the Monte-Carlo simulation for Lyα</figcaption>
 	    </figure>
-	    Cauley et al. (2015,2016) observed Hα and Na D transmission spectrum of hot Jupiter HD 189733b using ground based telescopes.  The feature is a sensitive probe of planetary upper atmosphere because the excitation and de-excitation processes for H(<em>n=2</em>), the absorber of Hα, are strongly dependent on the local particle densities, temperature, and radiation field.  In addition, the line center transit depth of Hα and Na D are close, which indicates the absorption of these lines are mostly contributed by the same region. Therefore, an atmosphere model of this region that can explain both absorption features can largely improve the knowledge about the upper atmospheres of exoplanets.
+	    Cauley et al. (2015,2016) observed the Hα and Na D transmission spectra of the hot Jupiter HD 189733b using ground-based telescopes.  These features are sensitive probes of planetary upper atmosphere because the excitation and de-excitation processes for H(<em>n=2</em>), the absorber of Hα, are strongly dependent on the local particle densities, temperature, and radiation field.  Additionally, the line center transit depth of Hα and Na D of this planet are similar, indicating that the absorption of these lines is primarily contributed by the same region. Therefore, an atmosphere model of this region that can explain both absorption features could largely enhance our understanding of the upper atmospheres of exoplanets.
+
 	    <br><br>
 
-	    Following Christie et al. 2013, we constructed a spherically symmetric hydrostatic atmosphere model encompassing the region dominated by atomic hydrogen.  The atomic hydrogen level population was computed including both collisional and radiative transition rates.  The radiative rates between <em>1s</em> and <em>2p</em> determines  <img src="http://latex.codecogs.com/svg.latex?n_{2p}" border="0"/> throughout the simulation domain because of the large Lyα intensity  <img src="http://latex.codecogs.com/svg.latex?\bar{J}_{Ly\alpha}" border="0"/>.  Lyα may also play a role in the heating/cooling and ionization/recombination balance, so a detailed Lyα radiation transfer calculation is crucial.
+	    Following Christie et al. (2013), we constructed a spherically symmetric hydrostatic atmosphere model encompassing the region dominated by atomic hydrogen.  The atomic hydrogen level population was computed including both collisional and radiative transition rates.  The radiative rates between <em>1s</em> and <em>2p</em> determines <em>n<sub>2p</sub></em> throughout the simulation domain because of the large Lyα intensity $\bar{J}_{Ly\alpha}$.  Lyα may also play a role in the heating/cooling and ionization/recombination balance, so a detailed Lyα radiation transfer calculation is crucial.
 
 	    <br><br>
 
@@ -191,7 +197,7 @@
 	      <figcaption style="max-width:95vw;">Figure 3.  Number density of major species against the atmosphere pressure.</figcaption>
 	    </figure>
 	    
-	    The combination of <img src="http://latex.codecogs.com/svg.latex?\bar{J}_{Ly\alpha} \propto P^{-1}" border="0"/>  and increasing <img src="http://latex.codecogs.com/svg.latex?n_{1s}" boarder="0"/> with depth gives rise to an approximately flat H(<em>n=2</em>) around 10<sup>4</sup> cm<sup>-3</sup> over two decades in pressure near the base of the thermosphere, where the temperature is in the range 3000 ~ 6000 K.  Metal species, esp. Mg, Na, and Si, are important in heating and cooling of this region.  The number densities of Na I and H(<em>n=2</em>) are similar in the pressure region near 10<sup>-2</sup> μbar, where the optical depths of Na D and Hα reach 1.  This leads to similar transit depths for observed Hα and Na D lines.  
+	    The combination of $\bar{J}_{Ly\alpha} \propto P^{-1}$ and increasing $n_{1s}$ with depth gives rise to an approximately flat H(<em>n=2</em>) around 10<sup>4</sup> cm<sup>-3</sup> over two decades in pressure near the base of the thermosphere, where the temperature is in the range 3000 ~ 6000 K.  Metal species, particularly Mg, Na, and Si, significantly contribute to the heating and cooling in this region.  The number densities of Na I and H(<em>n=2</em>) are similar in the pressure region near 10<sup>-2</sup> μbar, where the optical depths of Na D and Hα reach 1. This similarity explains the comparable transit depths observed for the Hα and Na D lines. 
 
 	    <br><br>
 
@@ -203,76 +209,91 @@
 	      <div class="column">
 		<figure>
 		  <img src="./images/Halpha.png"  alt="Models of Hα transmission spectrum compared to observations"  style="width:100%; max-width:95vw;"/> 
-		  <figcaption class="figtablecap" style="max-width:95vw;">Figure 4.  Models of Hα transmission spectrum compared to observations.</figcaption>
+		  <figcaption class="figtablecap" style="max-width:95vw;">Figure 4.  Simulated Hα transmission spectrum compared to observations.</figcaption>
 		</figure>
 	      </div>
 	      <div class="column">
 		<figure>
 		  <img src="./images/Na.png" alt="Models of Na D transmission spectrum compared to observations" style="width:100%; max-width:95vw;"/>
-		  <figcaption class="figtablecap" style="max-width:95vw;">Figure 5.  Models of Na D transmission spectrum compared to observations.</figcaption>
+		  <figcaption class="figtablecap" style="max-width:95vw;">Figure 5.  Simulated Na D transmission spectrum compared to observations.</figcaption>
 		</figure>
 	      </div>
 	    </div>
 
-
-	    The black solid line shows the fiducial model. To study the impact of stellar activity, blue dotted line and red dashed line show the models whose incoming stellar Lyman continuum flux has been multiplied by a factor of ξ=4 and ξ=1/4 respectively. Larger stellar XUV flux can lead to a deeper transit depth, because the larger XUV flux increases the Lyα intensity inside the atmosphere, and then increases the H(<em>n=2</em>) number density.  This may explain the different transit depths between two observations.  Unlike Hα, the transit depth of Na D is not sensitive to the Lyman continuum radiation. It is because that the temperature of the layer that Na D probes is determined by metal species with lower excitation energy, which is insensitive to the Lyman continuum radiation.  
+	    The black solid line represents the fiducial model, illustrated in Figure 3. To investigate the impact of stellar activity, the blue dotted line and red dashed line represent models where the incoming stellar Lyman continuum flux has been multiplied by factors of ξ=4 and ξ=1/4, respectively. An increase in stellar XUV flux can result in a deeper transit depth because it boosts the Lyα intensity within the atmosphere, subsequently increasing the H(<em>n=2</em>) number density. This could account for the observed differences in transit depths between the two observations. Unlike Hα, the transit depth of Na D is not significantly affected by the Lyman continuum radiation. This insensitivity is attributed to the fact that the temperature of the atmospheric layer probed by Na D is determined by metal species with lower excitation energies, which are not influenced by the Lyman continuum radiation.
 
 	    <br><br>
-	    
-	    The green solid line shows the model assuming the abundance of Mg, which is the dominant coolant, is 10<sup>-4</sup> of the solar abundance.  Since metal lines are the dominant coolant in this part of the atmosphere, the atmosphere structure is sensitive to the density of species such as Mg and Na which may themselves be constrained by observations.
+
+	    The green solid line represents the model that assumes the abundance of Mg, which is the dominant coolant, is 10<sup>-4</sup> times the solar abundance.  Since metal lines are the dominant coolant in this atmospheric region, the atmosphere structure is sensitive to the density of species such as Mg and Na which may themselves be constrained by observations.
+
 
 	    <section class="spotlight">
 	      <div class="image"><img src="./images/HD189733_shrink.jpg"  alt="Watching HD 189733 with 26-inch refractor" style="width:400px; max-width:100vw;"/></div>
 	      <div class="content">
-		<p><em>The host star of the planet, HD 189733, is a 8 magnitude star in the constellation of Vulpecula, located near the center of the summer triangle.  It can be found with binoculars 0.3 degrees east of the Dumbbell Nebula.  The brightness and location of the star make it a ideal target for amateur telescope.  Photo: I was observing the HD 189733 using the 26-inch refractor telescope located at the McCormick observatory.  It is an interesting experience to have the chance to directly see the system that I am studying. </em>
+		<p><em>
+		    The host star of the planet, HD 189733, is an 8th magnitude star in the constellation Vulpecula, situated near the center of the Summer Triangle.  It can be located with binoculars approximately 0.3 degrees east of the Dumbbell Nebula.  The brightness and position of the star make it a ideal target for amateur telescope.  Photo: I was observing HD 189733 through the 26-inch refractor telescope located at the McCormick observatory.  It is an intriguing experience to have the opportunity to directly view the system I am studying with the naked eye. </em>
 		</p>
 	      </div>
 	    </section>
 
 	  </p>    
-	  <hr   id="supernova">
+	  <hr   id="wasp121b">
 	</div>
 
-	
 	<div class="inner">
 
-	  <h3 style="text-transform: none;">Electron Scattering Wings on Lines in Interacting Supernovae</h3>
+	  <h3 style="text-transform: none;">A Hydrodynamic Study of the Escape of the Atmosphere of WASP-121b</h3>
 	  <p>
 
-	    	    
 	    <figure class="figurer">
-	      <img src="./images/elsc_sketch.png" width="300px" alt="Illustration of the scattering region."/>
-	      <figcaption>Figure 6.  Illustration of the scattering region.</figcaption>
+	      <img src="./images/Mercedes_Lopez-Morales.png"  alt="Schematic of planetary upper atmosphere." style="width:500px; max-width:100vw;">
+	      <figcaption>Figure 6.  Schematic of major physical processes in the planetary upper atmosphere (Credit: Mercedes López-Morales). </figcaption>
 	    </figure>
 
-	    
-	    Interacting supernovae show evidence of strong shock interaction between their ejecta and pre-existing circumstellar material (CSM), which may be ejected from the unstable progenitor star before the explosion.
-After the supernova shock wave has broken out of the progenitor star, the ionizing radiation from the shock region is able to ionize the surroundings.  The CSM can have a substantial optical depth to electron scattering and the continuum photosphere is in the unshocked CSM due to the electron scattering opacity.  The iconic feature in their spectra is the broad wings (1000s of km/s) associated with the narrow emission lines.  To explain the line formation of this feature, we adopt the idea that the narrow emissions are created in the preshock ionized CSM by recombination cascades, and the line profiles are broadened by the electron scattering for the photons that make their way out.  This unified model explains the narrow and broad component together.
-
 	    <br><br>
-	    
-	    Shown in Figure 6, the Monte-Carlo simulations were carried out in spherical symmetry, with the scattering medium between the absorbing inner boundary (R1), which can represent a shocked shell,  and a large escaping outer radius (R2), which stands for the outer boundary of ionized dense CSM.  A photon generated in the wind gas can a) be absorbed by the inner boundary, b) escape the medium from the outer boundary without any scattering, contributing to the narrow component of the spectrum, or c) escape from the outer boundary after scattering a certain number of times, contributing to the broad component.
 
-	    <br><br>
-	    
+	    The escape of planetary atmospheres is a vital aspect of planetary evolution. Planets such as Venus, Earth, and Mars all underwent rapid atmospheric loss during their early formation. The formation of structures like the radius gap in the relationship between exoplanet radius and orbital period, as well as the hot Neptune desert, is widely believed to be associated with atmospheric escape. High spectral resolution transmission spectroscopic observations of the upper atmospheres of exoplanets offer a means to analyze atmospheric structures during the escape process, thereby deepening our understanding of atmospheric escape mechanisms. 
+
 	    <figure class="figurer">
-	      <img src="./images/11ht.png" alt="Comparison of the electron scattering model with the SN 2011ht Hα emission line" style="width:450px; max-width:100vw;"/>
-	      <figcaption>Figure 7.  Comparison of the electron scattering model with the SN 2011ht Hα emission line.</figcaption>
+	      <img src="./images/Tide_base75d_0.35ex_hires.png" alt="Simulated transmission spectrum"  style="width:500px; max-width:100vw;">
+	      <figcaption>Figure 7.  Simulated optical and NUV transmission spectrum of WASP-121b. </figcaption>
 	    </figure>
-	    
-	    We investigated the dependence of the line profiles on various parameters, including the optical depth, the density distribution, and the velocity profile of the CSM.  The line shape is approximately exponential. The radial velocity of CSM can lead to an asymmetry toward the red.  We compare the electron scattering model to a number of supernovae, including Type IIn and Type Ia-CSM events.
 
-    
 	    <br><br>
 	    
-	    The black body continuum subtracted SN 2011ht Hα spectrum (black line in Figure 7) shows a narrow component and a broad component with an enhanced red wing (note the exponential y-scale).  It can be explained with a model (red line) of expanding CSM with electron scattering optical depth of τ=3.5, temperature of 12,000 K and expanding velocity 600 km/s. A broad He emission feature creates the bump on the red wing around 5000 km/s.
+	    We conducted an in-depth study of the ultra-hot Jupiter WASP-121b.  WASP-121b is one of the most extensively and highest-quality studied planets in terms of transmission spectroscopic observations. It exhibits absorption signals from a wide range of elements in the optical and near-ultraviolet (NUV) bands, observed with high spectral resolution. The transmission spectrum reveals that features of Hα, Ca, Mg, and Fe extend beyond the planetary Roche lobe, providing clear evidence of direct atmospheric escape from the planet.
 
-  
-	  </p>
+	    <br><br>
+
+	    By incorporating the <a href="#atmosphere">Lyα simulation</a> and the non-LTE level population of metal species into the hydrodynamic atmospheric escape model, the simulation was able to reproduce nearly all detected spectral features.  The matching of multiple atomic/ion spectral line features with a self-consistent atmospheric model for the first time, offers significant constraints on the structure and escape rate of planetary atmospheres.
+	    
+	    <div class="row2">
+	      <div class="column">
+		<figure>
+		  <img src="./images/Tide_base75d_0.35ex_optical.png"  alt="Optical transmission spectrum"  style="width:100%; max-width:95vw;"/> 
+		  <figcaption class="figtablecap" style="max-width:95vw;">Figure 8.  Compare simulated transmission spectrum with optical observation conducted by VLT/ESPRESSO.</figcaption>
+		</figure>
+	      </div>
+	      <div class="column">
+		<figure>
+		  <img src="./images/Tide_base75d_0.35ex_NUV.png" alt="NUV transmission spectrum" style="width:100%; max-width:95vw;"/>
+		  <figcaption class="figtablecap" style="max-width:95vw;">Figure 9.  Compare simulated transmission spectrum with NUV observation conducted by HST/STIS.</figcaption>
+		</figure>
+	      </div>
+	    </div>
+	    
+
+	    <br><br>
+
+	    The modeled atmospheric mass loss rate is several times higher than the energy-limited photoevaporation rate commonly employed in atmospheric escape theory.  This finding suggests that for WASP-121b, Roche lobe overflow, rather than photoevaporation, is the predominant mechanism driving atmospheric escape.  Motivated by these results, I collaborated with my postdoc advisor, Prof. Koskinen, to explore the parameter space where mass loss is primarily driven by photoevaporation and Roche lobe overflow, respectively (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...929...52K/abstract">Koskinen et al., 2022</a>). 
+
+	    <br><br>
+
+
+	  </p>    
 	  <hr   id="structure">
 	</div>
 
-	
 	<div class="inner">
 
 	  <h3 style="text-transform: none;">Terrestrial Planets Interior Structure Solver MAGRATHEA and Its Applications</h3>
@@ -282,25 +303,29 @@ After the supernova shock wave has broken out of the progenitor star, the ionizi
 	    <br><br>
 
 	    <figure class="figurer">
-	      <img src="./images/Schematiccrop.jpg" alt="A schematic overview of MAGRATHEA" style="width:1000px; max-width:100vw;"/>
-	      <figcaption>Figure 8.  A schematic overview of MAGRATHEA showing the input (left), four layer structure (center), and the pressure and temperature with enclosed mass (right).</figcaption>
+	      <img src="./images/Schematiccrop.jpg" alt="A schematic overview of MAGRATHEA" style="width:600px; max-width:100vw;"/>
+	      <figcaption>Figure 10.  A schematic overview of MAGRATHEA showing the input (left), four layer structure (center), and the pressure and temperature with enclosed mass (right).</figcaption>
 	    </figure>
-	    
-	    We develope an open-source C++ terrestrial planet interior structure code <a href="https://github.com/Huang-CL/Magrathea">MAGRATHEA</a> that can meet most requirements.  Following the treatment in Zeng et al. 2016, we assume a fully differentiated planetary interior.  Having the potential to add new compositions with relative ease, the current model is composed of four concentric spherical layers: iron, rock, ice, and ideal gas.  We numerically solve the ordinary differential equations with two-point boundary value problem using the method of shooting to a fitting point.  A schematic overview of MAGRATHEA is shown in Figure 8.  In the left of the figure, it shows an example input of a 1.1 Earth mass planet.  The center panel shows MAGRATHEA's four input layers with sketches of phase diagrams defined for each layer and EOS chosen for each phase.  The right panel shows the pressure and temperature with enclosed mass.  The radius at boundaries and the planet radii is also shown.
+
+	    We have developed an open-source, compact, and user-friendly C++-based terrestrial planet interior structure code <a href="https://github.com/Huang-CL/Magrathea">MAGRATHEA</a> that have broad applications.  Following the approach in Zeng et al. (2016), we assume a fully differentiated planetary interior.  The model solves the ordinary differential equations with a two-point boundary value problem using the shooting method to a fitting point.  MAGRATHEA currently consists of four concentric spherical layers: iron, rock, ice, and a gas layer.  It provides users with the flexibility to select their own combinations of equation of states (EOSs) for the planet's building blocks from the program's extensive EOS library.  Additionally, users can utilize the common interface to modify existing EOS and phase diagrams or add new ones to tailor the program to their specific needs.
 
 	    <br><br>
+	    
+	    A schematic overview of MAGRATHEA is presented in Figure 10.  In the left of the figure, it shows an example input of a 1.1 Earth mass planet.  The figure illustrates an example input for a 1.1 Earth mass planet. The center panel displays MAGRATHEA's four input layers, along with sketches of phase diagrams defined for each layer and the EOS chosen for each phase.  The right panel shows the pressure and temperature with enclosed mass.  The radius at boundaries and the planet radii is also shown.
 
-	    Solving the structure requires knowledge of the phase diagram and equation of state (EOS) <em>ρ(P,T)</em> for each material under high pressure.  Compared to other codes, MAGRATHEA features phase diagram options and transparent EOS formatting, which enables the user to choose between a large library of EOSs and add/change materials and equations. We are motivated by our collaboration with <a href="https://www.salamatlab.org/pi-ashkan-salamat/">high-pressure physicists</a> at UNLV, who significantly improved the measurement accuracy of the phase diagram and EOS of water ice.  Using MAGRATHEA, we study how uncertainties in experimental EOSs affect predictions of planet interiors. 
-	  
 	    <br><br>
 
 	    <figure class="figurer">
 	      <img src="./images/RM.jpg" alt="Mass-radius curve of planet models compared to observational data." style="width:600px; max-width:100vw;"/>
-	      <figcaption>Figure 9.  Mass-radius curve of planet models compared to observational data.</figcaption>
+	      <figcaption>Figure 11.  Mass-radius curve of planet models compared to observational data.</figcaption>
 	    </figure>
 	    
+   
 
-	    Figure 9 shows planet mass-radius relation plot for two-layer models.  The model uses the new water ice EOS are shown by the solid mass-radius curves.  To propagate the uncertainty from EOS fitting to the planet radius, we repeat the calculation of each planet mass-radius curve 1000 times with randomly chosen posteriors of EOS fitting parameters generated by MCMC.  The narrow bands enclosed by the dash-dotted lines surrounding the solid lines indicate the 1<em>σ</em> error bar only considered the statistical uncertainty of EOS fitting.  Dotted curves show the result from Zeng et al. 2016, which considered the effects of planet interior temperature variations.  The dashed curves show a more direct comparison to our results by removing the temperature dependence.  Planets whose radii and masses are measured to better than ~10% and ~20% respectively are plotted and color-coded by their surface temperatures.  The planet information are taken from NASA Exoplanet Archive, TEPCat and thereafter.  The inset plot shows the percent difference in isothermal planet radius due to EOSs (solid line with dashed line).  The increased planet radius suggested by the new EOS is larger than the radius uncertainty of many planets.  Thus, the contribution of the atmosphere or of water content to the planet structure for planets such as π Mensae c, Kepler 10c, and EPIC 246471491b may be less than previously inferred.  
+	    <br><br>
+
+	    Motivated by our collaboration with <a href="https://www.salamatlab.org/pi-ashkan-salamat/">high-pressure physicists</a> at UNLV, who significantly improved the measurement accuracy of the phase diagram and EOS of water ice, we utilized MAGRATHEA to investigate how uncertainties in experimental EOSs affect predictions of planetary interiors. Figure 11 shows a mass-radius relation plot for two-layer models, with solid mass-radius curves representing models that incorporate the new water ice EOS.  To propagate the uncertainty from EOS fitting to the planet radius, we recalculated each planet mass-radius curve 1000 times, using randomly chosen posteriors of EOS fitting parameters generated by MCMC.  The narrow bands enclosed by the dash-dotted lines surrounding the solid lines indicate the 1<em>σ</em> error bar, which accounts only for the statistical uncertainty of EOS fitting.  Dotted curves show the result from Zeng et al. (2016), which considered the effects of planet interior temperature variations.  The dashed curves provide a more direct comparison to our results by removing the temperature dependence.  Planets whose radii and masses are measured to better than ~10% and ~20%, respectively, are plotted and color-coded by their surface temperatures.  The inset plot illustrates the percent difference in isothermal planet radius due to EOSs (solid line with dashed line).  The increased planet radius suggested by the new EOS is larger than the radius uncertainty of many planets.  Consequently, the contribution of the atmosphere or water content to the planet structure for planets such as π Mensae c, Kepler 10c, and EPIC 246471491b may be less than previously inferred.  
+	  
 
 	    <!-- <br><br> -->
 	    
@@ -313,8 +338,46 @@ After the supernova shock wave has broken out of the progenitor star, the ionizi
 
 
 	  </p>
-	  <hr>
+	  <hr   id="supernova">
       	</div>
+
+	<div class="inner">
+
+	  <h3 style="text-transform: none;">Electron Scattering Wings on Lines in Interacting Supernovae</h3>
+	  <p>
+
+	    	    
+	    <figure class="figurer">
+	      <img src="./images/elsc_sketch.png" width="300px" alt="Illustration of the scattering region."/>
+	      <figcaption>Figure 12.  Illustration of the scattering region.</figcaption>
+	    </figure>
+
+	    
+	    Interacting supernovae provide evidence of strong shock interaction between their ejecta and pre-existing circumstellar material (CSM), which may have been ejected from the unstable progenitor star prior to the explosion.
+	    Once the supernova shock wave has broken out of the progenitor star, the ionizing radiation from the shock region can ionize the surrounding medium.  The CSM can have a substantial optical depth to electron scattering, with the continuum photosphere located in the unshocked CSM due to electron scattering opacity.  The iconic feature in their spectra is the broad wings, which can reach velocities of thousands of km/s, associated with narrow emission lines.  To explain the formation of this feature, we adopt the idea that the narrow emissions originate in the preshock ionized CSM through recombination cascades, and the line profiles are broadened by the electron scattering as the photons escape.  This unified model accounts for both the narrow and broad components of the feature.
+
+	    <br><br>
+	    
+	    Shown in Figure 12, the Monte-Carlo simulations were carried out in spherical symmetry, with the scattering medium situated between the absorbing inner boundary (R1), which can represent a shocked shell,  and a large escaping outer radius (R2), signifying the outer boundary of the ionized dense CSM.  A photon generated in the wind gas can either: a) be absorbed by the inner boundary, b) escape the medium from the outer boundary without scattering, contributing to the narrow component of the spectrum, or c) escape from the outer boundary after undergoing multiple scatterings, contributing to the broad component.
+
+	    <br><br>
+	    
+	    <figure class="figurer">
+	      <img src="./images/11ht.png" alt="Comparison of the electron scattering model with the SN 2011ht Hα emission line" style="width:450px; max-width:100vw;"/>
+	      <figcaption>Figure 13.  Comparison of the electron scattering model with the SN 2011ht Hα emission line.</figcaption>
+	    </figure>
+	    
+	    We investigated the dependence of the line profiles on various parameters, including the optical depth, the density distribution, and the velocity profile of the CSM.  The line shape is approximately exponential. The radial velocity of CSM can cause an asymmetry, leaning towards the red.  We compared the electron scattering model to a number of supernovae, including Type IIn and Type Ia-CSM events.
+
+	    <br><br>
+
+	    The Hα spectrum of SN 2011ht, with the black body continuum subtracted (as shown by the black line in Figure 13), exhibits a narrow component and a broad component with an enhanced red wing (note the exponential scale on the y-axis). This can be explained by a model (represented by the red line) that includes expanding CSM with an electron scattering optical depth of τ=3.5, a temperature of 12,000 K, and an expansion velocity of 600 km/s. A broad helium emission feature creates a bump on the red wing around 5000 km/s.
+  
+	  </p>
+	  <hr   id="structure">
+	</div>
+
+	
       </section>
 
       
@@ -332,7 +395,7 @@ After the supernova shock wave has broken out of the progenitor star, the ionizi
 	  <li><a href="https://github.com/Huang-CL" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 	</ul>
 	<ul class="copyright">
-	  <li>&copy; Chenliang Huang </li><li>Update: July 2023</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+	  <li>&copy; Chenliang Huang </li><li>Update: Nov 2024</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 	</ul>
       </footer>
 
